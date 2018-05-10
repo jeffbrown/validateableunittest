@@ -16,9 +16,13 @@ class DemoServiceSpec extends Specification implements ServiceUnitTest<DemoServi
         someLength | shouldBeValid
         -1         | false
         0          | false
-        1          | true
+        1          | false
         2          | true
-        9          | true
+        3          | false
+        4          | true
+        7          | false
+        8          | true
+        9          | false
         10         | true
         11         | false
         12         | false
